@@ -1,0 +1,13 @@
+---
+services:
+  yt-channel-noti:
+    container_name: yt-channel-noti
+    image: ghcr.io/hitomarukonpaku/yt-channel-noti
+    restart: unless-stopped
+    environment:
+      NO_COLOR: 1
+      NO_TIMESTAMP: 1
+      CHANNEL_INTERVAL: 30
+      CHANNEL_ID: "UC7fk0CB07ly8oSl0aqKkqFg" # @NakiriAyame
+      WEBHOOK_URL: "https://discord.com/api/webhooks/xxx"
+      WEBHOOK_MESSAGE: "<@153363129915539457>"
